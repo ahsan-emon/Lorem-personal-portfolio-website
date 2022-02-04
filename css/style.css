@@ -210,6 +210,9 @@ header {
   background-color: #f4fdff;
   padding: 20px 10px;
 }
+.contact-box:hover a {
+  transform: scale(1.2);
+}
 .contact-box a i {
   font-size: 45px;
   color: #40afcc;
@@ -219,6 +222,7 @@ header {
   align-items: center;
   text-decoration: none;
   justify-content: center;
+  transition: 0.4s all ease-in-out;
 }
 .contact-box a span {
   color: #40afcc;
