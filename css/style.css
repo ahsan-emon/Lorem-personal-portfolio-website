@@ -120,7 +120,8 @@ header {
 }
 /* about me start  */
 .about-me h1,
-.skills h1 {
+.skills h1,
+.work h1 {
   color: #40afcc;
   text-transform: uppercase;
   font-weight: 600;
@@ -201,6 +202,112 @@ header {
 .icon i {
   font-size: 25px;
   color: #fff;
+}
+/* work start  */
+.work ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.work ul li button {
+  font-weight: 500;
+  margin-right: 15px;
+  padding: 10px 15px;
+  border-radius: 0;
+  transition: 0.4s all ease-in-out;
+  color: #505050;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-end-end-radius: 20px;
+  font-weight: 500;
+}
+.work ul li button:hover {
+  color: #40afcc;
+  border: 2px solid #40afcc;
+  border-end-end-radius: 20px;
+}
+.work ul li button:focus {
+  color: #40afcc;
+  border: 2px solid #40afcc;
+  box-shadow: none;
+}
+.mix-cont-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.mix-cont-box img {
+  height: 100%;
+  width: 100%;
+}
+.mix-cont-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #23232369;
+  transition: 0.4s all ease-in-out;
+}
+.mix-cont-box:hover::after {
+  height: 100%;
+}
+.img-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  z-index: 99;
+  width: 100%;
+  background-color: #232323;
+  padding: 15px 0;
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
+}
+.mix-cont-box:hover .img-text {
+  opacity: 1;
+}
+.img-text h6 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+.img-text p {
+  color: #a4a3a3;
+  font-size: 14px;
+  margin: 0;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: 0.4s all ease-in-out;
+  opacity: 0;
+  z-index: 99;
+}
+.icon i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #40afcc;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mix-cont-box:hover .icon {
+  top: 10px;
+  right: 10px;
+  opacity: 1;
 }
 /* contact start  */
 .contact {
