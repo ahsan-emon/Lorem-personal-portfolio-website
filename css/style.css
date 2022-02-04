@@ -121,7 +121,8 @@ header {
 /* about me start  */
 .about-me h1,
 .skills h1,
-.work h1 {
+.work h1,
+.resume h1 {
   color: #40afcc;
   text-transform: uppercase;
   font-weight: 600;
@@ -202,6 +203,76 @@ header {
 .icon i {
   font-size: 25px;
   color: #fff;
+}
+/* resume start  */
+.sub-title-timeline {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #aaaaaa;
+}
+.sub-title-timeline i {
+  color: #40afcc;
+}
+.timeline {
+  position: relative;
+  margin-left: 50px;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -40px;
+  width: 4px;
+  height: 98%;
+  background-color: #40afcc;
+}
+.timeline h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #242424;
+}
+.timeline p {
+  color: #999;
+}
+.timeline h6 {
+  font-size: 18px;
+  color: #242424;
+}
+.circle-timeline {
+  position: relative;
+}
+.circle-timeline::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -59px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid #40afcc;
+  background-color: #40afcc;
+  z-index: 99;
+  transition: 0.4s all ease-in-out;
+}
+.timeline-info {
+  padding: 5px 5px 5px 12px;
+  border-radius: 5px;
+  transition: 0.4s all ease-in-out;
+}
+.timeline-info:hover {
+  box-shadow: 1px 2px 3px 0px #cce4ed;
+}
+.timeline-info:hover .circle-timeline::after {
+  background-color: #fff;
+}
+.timeline-info:hover .circle-timeline,
+.timeline-info:hover h6 {
+  color: #40afcc;
+}
+
+.fa-calendar-alt {
+  margin-right: 7px;
 }
 /* work start  */
 .work ul {
