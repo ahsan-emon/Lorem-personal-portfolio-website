@@ -1,0 +1,174 @@
+/* font style  */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+/* common part  */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* header start  */
+header {
+  background-image: url("../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fffefe;
+  padding: 12px 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 99;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fffefe;
+}
+.menu-underline {
+  position: relative;
+}
+.menu-underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  width: 0%;
+  height: 5px;
+  background-color: #008ed6;
+  transition: 0.5s all ease-in-out;
+}
+.menu-underline:hover::after {
+  width: 100%;
+  transition: 0.2s all ease-in-out;
+}
+.menu-underline:focus::after {
+  width: 100%;
+}
+.menu-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #008fd659;
+  transition: 0.5s all ease-in-out;
+  z-index: -1;
+}
+.menu-underline:hover::before {
+  height: 100%;
+}
+.menu-underline:focus::before {
+  height: 100%;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #fffefe;
+}
+/* banner start */
+.banner .row {
+  height: 80vh;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 65px;
+}
+.banner h1 span {
+  color: #40afcc;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.banner p {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.download-btn {
+  color: #fff;
+  background-color: #40afcc;
+  border-radius: 2px;
+  font-size: 18px;
+  border-bottom-left-radius: 20px;
+  padding: 7px 18px;
+  transition: 0.4s all ease-in-out;
+}
+.download-btn:focus {
+  box-shadow: none;
+}
+.download-btn:hover {
+  color: #fff;
+  background-color: #128cad;
+}
+.portfolio-btn {
+  color: #fff;
+  border-radius: 2px;
+  border: 2px solid #40afcc;
+  border-bottom-right-radius: 20px;
+  padding: 7px 18px;
+  font-size: 18px;
+  transition: 0.4s all ease-in-out;
+}
+.portfolio-btn:hover {
+  color: #fff;
+  background: #40afcc;
+}
+.portfolio-btn:focus {
+  box-shadow: none;
+}
+/* about me start  */
+.about-me h1,
+.skills h1 {
+  color: #40afcc;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about-me p {
+  color: #999;
+}
+/* skill start  */
+.skills h5 {
+  color: #40afcc;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* contact start  */
+.contact {
+  padding: 50px 0;
+}
+.contact-box {
+  background-color: #f4fdff;
+  padding: 20px 10px;
+}
+.contact-box a i {
+  font-size: 45px;
+  color: #40afcc;
+}
+.contact-box a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+.contact-box a span {
+  color: #40afcc;
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* footer start  */
+footer {
+  background: #40afcc;
+  padding: 32px 0;
+}
+footer p {
+  color: #fff;
+  margin: 0;
+}
